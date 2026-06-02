@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Termos de Uso</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#scare {
+    display: none;
+    position: fixed;
+    inset: 0;
+}
+
+#scare img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Termos de Uso</h1>
+<p>Por favor aceite os termos para continuar.</p>
+
+<button onclick="jumpscare()">Aceitar</button>
+
+<div id="scare">
+    <img src="90b5fa39104f998907963a5d8064a533.webp">
+    <audio id="audio" src="dom-dom-tava-aqui-no-baile.mp3"></audio>
+</div>
+
+<script>
+function jumpscare() {
+    document.getElementById("scare").style.display = "block";
+    document.getElementById("audio").play();
+}
+</script>
+
+</body>
+</html>
